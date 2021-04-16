@@ -1,0 +1,11 @@
+	//Creo este metodo para usar en PruebaLeerPiezasDesdeFichero, debemos pasarle como argumentos
+	//el codigo del objeto Pieza leído y un array de objeto Proveedores y nos devolverá el nombre 
+	//del proveedor al que pertenece dicho código
+	
+	public String encontrarProve(int codigo, Proveedores arrayP[]) {
+		String nombre="";
+		Proveedores objeto=new Proveedores();
+		for(int i=0; i<arrayP.length; i++) {
+			objeto=arrayP[i];
+			if(codigo==objeto.getCod_proveedor()) {
+				nombre=objeto.getNombre_pro
